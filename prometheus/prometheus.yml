@@ -64,3 +64,19 @@ scrape_configs:
     
     # static_configs:
     #      - targets: ['node-exporter:9100']
+    
+  - job_name: 'product-management'
+
+    # Override the global default and scrape targets from this job every 5 seconds.
+    scrape_interval: 5s
+
+    static_configs:
+      - targets: ['oiiqwsdev1.oiiq.org:8081']
+      
+  - job_name: 'user-management'
+
+    # Override the global default and scrape targets from this job every 5 seconds.
+    scrape_interval: 5s
+
+    static_configs:
+      - targets: ['oiiqwsdev1.oiiq.org:8082']

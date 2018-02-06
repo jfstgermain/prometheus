@@ -20,6 +20,7 @@ services:
       - '--storage.tsdb.path=/prometheus'
       - '--web.console.libraries=/usr/share/prometheus/console_libraries'
       - '--web.console.templates=/usr/share/prometheus/consoles'
+      - '--web.enable-admin-api'
     ports:
       - 9090:9090
     links:
@@ -45,7 +46,9 @@ services:
       - '--path.procfs=/host/proc' 
       - '--path.sysfs=/host/sys'
       - --collector.filesystem.ignored-mount-points
-      - "^/(sys|proc|dev|host|etc|rootfs/var/lib/docker/containers|rootfs/var/lib/docker/overlay2|rootfs/run/docker/netns|rootfs/var/lib/docker/aufs)($$|/)"
+      - "^/(net|sys|proc|dev|host|etc|rootfs/var/lib/docker|rootfs/run/docker/netns)($$|/)"
+      - --collector.filesystem.ignored-fs-types
+      - "^(autofs|binfmt_misc|cgroup|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|mqueue|proc|procfs|pstore|rpc_pipefs|securityfs|sysfs|tracefs)$"
     ports:
       - 9100:9100
     networks:
