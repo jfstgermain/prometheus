@@ -21,7 +21,7 @@ groups:
       summary: "Instance {{ $labels.instance }} under high load"
       description: "{{ $labels.instance }} of job {{ $labels.job }} is under high load."
       
-  - alert: failing_requests_high_count
+  - alert: failing_http_requests_high_count
     expr: |-
       rate(http_api_request_duration_seconds_count{status_code=~"5.."}[5m]) * 2
       > on(job, instance, method, path)
@@ -32,3 +32,4 @@ groups:
     annotations:
       summary: "High number of failing http requests on {{ $label.job }}"
       description: "{{ $value }}"
+      
