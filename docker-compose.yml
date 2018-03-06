@@ -45,10 +45,11 @@ services:
     command: 
       - '--path.procfs=/host/proc' 
       - '--path.sysfs=/host/sys'
-      - --collector.filesystem.ignored-mount-points
+      - '--collector.filesystem.ignored-mount-points'
       - "^/(net|sys|proc|dev|host|etc|rootfs/var/lib/docker|rootfs/run/docker/netns)($$|/)"
-      - --collector.filesystem.ignored-fs-types
+      - '--collector.filesystem.ignored-fs-types'
       - "^(autofs|binfmt_misc|cgroup|configfs|debugfs|devpts|devtmpfs|fusectl|hugetlbfs|mqueue|proc|procfs|pstore|rpc_pipefs|securityfs|sysfs|tracefs)$$"
+      - '--no-collector.ipvs'
     ports:
       - 9100:9100
     networks:
