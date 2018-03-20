@@ -8,3 +8,5 @@ receivers:
             username: '<username>'
             channel: '#<channel-name>'
             api_url: '<incomming-webhook-url>'
+            title: '[{{ .Status | toUpper }}{{ if eq .Status "firing" }}:{{ .Alerts.Firing | len }}{{ end }}] {{ .CommonAnnotations.summary }}'
+            text:  '{{ .CommonAnnotations.description }}'

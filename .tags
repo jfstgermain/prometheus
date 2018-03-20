@@ -1,0 +1,152 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+sudo	/home/jfstgermain/dev/prometheus/.travis.yml	/^sudo: required$/;"	function	line:1
+services	/home/jfstgermain/dev/prometheus/.travis.yml	/^services:$/;"	function	line:3
+language	/home/jfstgermain/dev/prometheus/.travis.yml	/^language: bash$/;"	function	line:6
+before_script	/home/jfstgermain/dev/prometheus/.travis.yml	/^before_script:$/;"	function	line:8
+script	/home/jfstgermain/dev/prometheus/.travis.yml	/^script:$/;"	function	line:13
+version	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^version: '3.1'$/;"	function	line:1
+volumes	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^volumes:$/;"	function	line:3
+prometheus_data	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    prometheus_data: {}$/;"	function	line:4
+grafana_data	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    grafana_data: {}$/;"	function	line:5
+prometheus_config_data	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    prometheus_config_data: {}$/;"	function	line:6
+alertmanager_config_data	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    alertmanager_config_data: {}$/;"	function	line:7
+networks	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^networks:$/;"	function	line:9
+services	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^services:$/;"	function	line:13
+prometheus	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^  prometheus:$/;"	function	line:15
+image	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    image: prom\/prometheus:v2.0.0$/;"	function	line:16
+volumes	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    volumes:$/;"	function	line:17
+command	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    command:$/;"	function	line:20
+ports	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    ports:$/;"	function	line:25
+links	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    links:$/;"	function	line:27
+depends_on	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    depends_on:$/;"	function	line:30
+networks	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    networks:$/;"	function	line:32
+restart	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    restart: always$/;"	function	line:34
+deploy	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    deploy:$/;"	function	line:35
+placement	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^      placement:$/;"	function	line:36
+constraints	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^        constraints:$/;"	function	line:37
+image	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    image: prom\/node-exporter$/;"	function	line:41
+volumes	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    volumes:$/;"	function	line:42
+command	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    command: $/;"	function	line:46
+ports	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    ports:$/;"	function	line:51
+networks	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    networks:$/;"	function	line:53
+restart	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    restart: always$/;"	function	line:55
+deploy	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    deploy:$/;"	function	line:56
+mode	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^      mode: global$/;"	function	line:57
+alertmanager	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^  alertmanager:$/;"	function	line:59
+image	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    image: prom\/alertmanager$/;"	function	line:60
+ports	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    ports:$/;"	function	line:61
+volumes	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    volumes:$/;"	function	line:63
+networks	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    networks:$/;"	function	line:65
+restart	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    restart: always$/;"	function	line:67
+command	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    command:$/;"	function	line:68
+deploy	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    deploy:$/;"	function	line:71
+placement	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^      placement:$/;"	function	line:72
+constraints	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^        constraints:$/;"	function	line:73
+cadvisor	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^  cadvisor:$/;"	function	line:75
+image	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    image: google\/cadvisor$/;"	function	line:76
+volumes	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    volumes:$/;"	function	line:77
+ports	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    ports:$/;"	function	line:82
+networks	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    networks:$/;"	function	line:84
+restart	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    restart: always$/;"	function	line:86
+deploy	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    deploy:$/;"	function	line:87
+mode	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^      mode: global$/;"	function	line:88
+source	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^  source:$/;"	function	line:89
+image	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    image: containerize\/git$/;"	function	line:90
+environment	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    environment: $/;"	function	line:91
+tty	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    tty: true$/;"	function	line:95
+volumes	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    volumes: $/;"	function	line:96
+grafana	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^  grafana:$/;"	function	line:100
+image	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    image: grafana\/grafana$/;"	function	line:101
+depends_on	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    depends_on:$/;"	function	line:102
+ports	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    ports:$/;"	function	line:104
+volumes	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    volumes:$/;"	function	line:106
+environment	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    environment: $/;"	function	line:108
+networks	/home/jfstgermain/dev/prometheus/pwd-stack.yml	/^    networks:$/;"	function	line:111
+route	/home/jfstgermain/dev/prometheus/alertmanager/config.yml	/^route:$/;"	function	line:1
+receiver	/home/jfstgermain/dev/prometheus/alertmanager/config.yml	/^    receiver: 'slack'$/;"	function	line:2
+receivers	/home/jfstgermain/dev/prometheus/alertmanager/config.yml	/^receivers:$/;"	function	line:4
+slack_configs	/home/jfstgermain/dev/prometheus/alertmanager/config.yml	/^      slack_configs:$/;"	function	line:6
+username	/home/jfstgermain/dev/prometheus/alertmanager/config.yml	/^            username: '<username>'$/;"	function	line:8
+channel	/home/jfstgermain/dev/prometheus/alertmanager/config.yml	/^            channel: '#<channel-name>'$/;"	function	line:9
+api_url	/home/jfstgermain/dev/prometheus/alertmanager/config.yml	/^            api_url: '<incomming-webhook-url>'/;"	function	line:10
+global	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^global:$/;"	function	line:2
+scrape_interval	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^  scrape_interval:     15s # By default, scrape targets every 15 seconds.$/;"	function	line:3
+evaluation_interval	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^  evaluation_interval: 15s # By default, scrape targets every 15 seconds.$/;"	function	line:4
+external_labels	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^  external_labels:$/;"	function	line:9
+monitor	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^      monitor: 'my-project'$/;"	function	line:10
+rule_files	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^rule_files:$/;"	function	line:13
+alerting	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^alerting:$/;"	function	line:19
+alertmanagers	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^  alertmanagers:$/;"	function	line:20
+static_configs	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^    static_configs:$/;"	function	line:22
+scrape_configs	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^scrape_configs:$/;"	function	line:28
+scrape_interval	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^    scrape_interval: 5s$/;"	function	line:34
+static_configs	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^    static_configs:$/;"	function	line:36
+scrape_interval	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^    scrape_interval: 5s$/;"	function	line:43
+dns_sd_configs	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^    dns_sd_configs:$/;"	function	line:45
+type	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^      type: 'A'$/;"	function	line:48
+port	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^      port: 8080$/;"	function	line:49
+scrape_interval	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^    scrape_interval: 5s$/;"	function	line:57
+dns_sd_configs	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^    dns_sd_configs:$/;"	function	line:59
+type	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^      type: 'A'$/;"	function	line:62
+port	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^      port: 9100$/;"	function	line:63
+scrape_interval	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^    scrape_interval: 5s$/;"	function	line:71
+static_configs	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^    static_configs:$/;"	function	line:73
+scrape_interval	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^    scrape_interval: 5s$/;"	function	line:79
+static_configs	/home/jfstgermain/dev/prometheus/prometheus/prometheus.yml	/^    static_configs:$/;"	function	line:81
+version	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^version: '3.1'$/;"	function	line:1
+volumes	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^volumes:$/;"	function	line:3
+prometheus_data	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    prometheus_data: {}$/;"	function	line:4
+grafana_data	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    grafana_data: {}$/;"	function	line:5
+networks	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^networks:$/;"	function	line:7
+services	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^services:$/;"	function	line:11
+prometheus	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^  prometheus:$/;"	function	line:13
+image	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    image: prom\/prometheus:v2.1.0$/;"	function	line:14
+volumes	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    volumes:$/;"	function	line:15
+command	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    command:$/;"	function	line:18
+ports	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    ports:$/;"	function	line:24
+links	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    links:$/;"	function	line:26
+depends_on	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    depends_on:$/;"	function	line:29
+networks	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    networks:$/;"	function	line:31
+restart	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    restart: always$/;"	function	line:33
+deploy	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    deploy:$/;"	function	line:34
+placement	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^      placement:$/;"	function	line:35
+constraints	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^        constraints:$/;"	function	line:36
+image	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    image: prom\/node-exporter$/;"	function	line:40
+volumes	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    volumes:$/;"	function	line:41
+command	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    command: $/;"	function	line:45
+ports	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    ports:$/;"	function	line:52
+networks	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    networks:$/;"	function	line:54
+restart	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    restart: always$/;"	function	line:56
+deploy	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    deploy:$/;"	function	line:57
+mode	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^      mode: global$/;"	function	line:58
+alertmanager	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^  alertmanager:$/;"	function	line:60
+image	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    image: prom\/alertmanager$/;"	function	line:61
+ports	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    ports:$/;"	function	line:62
+volumes	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    volumes:$/;"	function	line:64
+networks	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    networks:$/;"	function	line:66
+restart	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    restart: always$/;"	function	line:68
+command	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    command:$/;"	function	line:69
+deploy	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    deploy:$/;"	function	line:72
+placement	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^      placement:$/;"	function	line:73
+constraints	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^        constraints:$/;"	function	line:74
+cadvisor	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^  cadvisor:$/;"	function	line:76
+image	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    image: google\/cadvisor$/;"	function	line:77
+volumes	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    volumes:$/;"	function	line:78
+ports	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    ports:$/;"	function	line:83
+networks	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    networks:$/;"	function	line:85
+restart	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    restart: always$/;"	function	line:87
+deploy	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    deploy:$/;"	function	line:88
+mode	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^      mode: global$/;"	function	line:89
+grafana	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^  grafana:$/;"	function	line:91
+image	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    image: grafana\/grafana$/;"	function	line:92
+depends_on	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    depends_on:$/;"	function	line:93
+ports	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    ports:$/;"	function	line:95
+volumes	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    volumes:$/;"	function	line:97
+env_file	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    env_file:$/;"	function	line:99
+networks	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    networks:$/;"	function	line:101
+restart	/home/jfstgermain/dev/prometheus/docker-compose.yml	/^    restart: always$/;"	function	line:104

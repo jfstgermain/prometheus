@@ -13,13 +13,13 @@ groups:
       description: "{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 2 minutes."
 
   - alert: high_load
-    expr: node_load1 > 0.5
+    expr: node_load1 > 4
     for: 2m
     labels:
       severity: page
     annotations:
       summary: "Instance {{ $labels.instance }} under high load"
-      description: "{{ $labels.instance }} of job {{ $labels.job }} is under high load."
+      description: "{{ $labels.instance }} of job {{ $labels.job }} is under high load ({{ $value }})."
       
   - alert: failing_http_requests_high_count
     expr: |-
