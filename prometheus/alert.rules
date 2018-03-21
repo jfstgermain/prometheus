@@ -30,6 +30,6 @@ groups:
     labels:
       severity: page
     annotations:
-      summary: "High number of failing http requests on {{ $label.job }}"
+      summary: "High number of failing http requests on {{ $labels.job }}"
       description: "{{ $value }}"
       
