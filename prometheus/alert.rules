@@ -23,13 +23,24 @@ groups:
       
   - alert: failing_http_requests_high_count
     expr: |-
-      rate(http_api_request_duration_seconds_count{status_code=~"5.."}[5m]) * 2
+      rate(http_api_request_duration_seconds_count{status_code=~"5.."}[10m]) * 50
       > on(job, instance, method, path)
-        rate(http_api_request_duration_seconds_count{status_code=~"2.."}[5m])
+        rate(http_api_request_duration_seconds_count{status_code=~"2.."}[10m])
     for: 5m
     labels:
       severity: page
     annotations:
       summary: "High number of failing http requests on {{ $labels.job }}"
-      description: "{{ $value }}"
+      description: "{{ $labels.method }} {{ $labels.path }} : {{ $value }}"
       
+  - alert: failing_ext_http_requests_high_count
+    expr: |-
+      rate(http_ext_request_duration_seconds_count{status_code=~"5.."}[10m]) * 50
+      > on(job, instance, method, path)
+        rate(http_ext_request_duration_seconds_count{status_code=~"2.."}[10m])
+    for: 5m
+    labels:
+      severity: page
+    annotations:
+      summary: "High number of failing external http requests on {{ $labels.job }}"
+      description: "{{ $labels.method }} {{ $labels.path }} : {{ $value }}"      
